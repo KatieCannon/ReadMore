@@ -6,3 +6,17 @@
     color: white;
     align-items: center;
 }
+
+.navBar > a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navBar > a:hover {
+    color: red;
+}
+
+.active {
+    color: purple !important;
+}
