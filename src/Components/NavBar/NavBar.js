@@ -1,11 +1,9 @@
 import React from 'react';
 import './NavBar.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavBar = ({ user }) => {
-    console.log(user);
-    const section=window.location.pathname;
-    console.log(section);
+    const section = window.location.pathname;
     return (
         <div className='navBar'>
             <Link to='/bookshelf' className={section === '/bookshelf' ? 'active' : ''}>
