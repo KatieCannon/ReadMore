@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import NavBar from '../NavBar/NavBar';
-import Header from '../Header/Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
             <NavBar user={user[0]} />
           </Route>
           <Route path='/'>
-            <Header />
+            <NavBar user={user[0]} />
           </Route>
         </Switch>
       </Router>
