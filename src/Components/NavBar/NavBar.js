@@ -16,7 +16,7 @@ const NavBar = ({ user }) => {
             <Link to='booklist' className={section === '/booklist'? 'active' : ''}>
                 <h2>BookList</h2>
             </Link>
-            <Link to='/'>
+            <Link to='/' className={section === '/'? 'active' : ''}>
             <h2>{user ? 'Logout' : 'Login'}</h2>
             </Link>
         </div>
